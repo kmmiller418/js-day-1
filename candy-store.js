@@ -38,22 +38,31 @@ switch (candySize) {
 //AS A FUNCTION
 
 function candyStore(candyName, candySize){
+    var price;
     switch (candySize) {
         case 'small':
-            return("This " + candyName + " costs $1.00");
+            price = "$1.00";
+            break;
         case 'medium':
-            return("This " + candyName + " costs $1.75");
+            price = "$1.75";
+            break;
         case 'large':
-            return("This " + candyName +  " costs $2.50");
+            price = "$2.50";
+            break;
         case 'jumbo':
-            return("This " + candyName + " costs $4.75");
+            price = "$4.75";
+            break;
         default: 
-            return("Associate please look up price and check if valid.")
+            console.log("Associate please look up price and check if valid.");
+            break;
+    }
+    if (price){
+        console.log("This " + candyName + " costs " + price);
     }
 }
 
-console.log(candyStore('Choco Chunks', 'small'));
-console.log(candyStore('Crackle Crisps','large'));
-console.log(candyStore('All My Toffee', 'jumbo'));
-console.log(candyStore('Mint Chip Supreme', 'lArGe'));
-console.log(candyStore('Darkest Cocoa', 'snack'));
+candyStore('Choco Chunks', 'small');
+candyStore('Crackle Crisps','large');
+candyStore('All My Toffee', 'jumbo');
+candyStore('Mint Chip Supreme', 'lArGe');
+candyStore('Darkest Cocoa', 'snack');
