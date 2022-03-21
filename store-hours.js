@@ -20,20 +20,17 @@ if (weekend || holiday) {
 
 function storeOpen(weekend, holiday, time){
     if (weekend || holiday) {
-        return("The store is closed");
+        console.log("The store is closed");
     } else {
         if (time < 18 && time > 8) {
-            return("The store is open for business.");
+            console.log("The store is open for business.");
         } else {
-            return("The store is closed.");
+            console.log("The store is closed.");
         }    }
 }
 
-//BONUS HELPER FUNCTION
-// function isWeekend(day){
-//     if (day == 'Saturday' || day == 'Sunday') {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+// storeOpen(true,false,13);
+// storeOpen(false,true,16);
+// storeOpen(false,false,10);
+// storeOpen(false,false,17);
+// storeOpen(false,false,21);
