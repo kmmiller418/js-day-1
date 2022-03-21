@@ -11,9 +11,9 @@ if (horses > 8) {
 
 function stableCalculator(numHorses) {
     if (numHorses > 8) {
-        return("There isn't enough room for all these horses!");
+        console.log("There isn't enough room for all these horses!");
     } else {
-        return("There is plenty of room in the stable");
+        console.log("There is plenty of room in the stable");
     }
 }
 
